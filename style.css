@@ -1,0 +1,136 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mood-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.mood {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    background: #1e1e1e;
+    border-radius: 50%;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.mood:hover {
+    transform: scale(1.2);
+    background: #333;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+#moodLogs {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.mood-card {
+    background-color: #1e1e1e;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.mood-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mood-details {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.mood-info .emoji {
+    font-size: 22px;
+}
+
+.mood-info .mood-name {
+    font-weight: bold;
+}
+
+.mood-time {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #888;  
+    font-size: 14px;  
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+.delete-btn:hover {
+    color: #d6d6d6; 
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .mood {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .mood-card {
+        font-size: 14px;
+        padding: 12px;
+        max-width: 90%;
+    }
+
+    .delete-btn {
+        font-size: 14px;
+    }
+}

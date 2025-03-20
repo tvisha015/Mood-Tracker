@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Mood Tracker</h1>
+    
+    <p>How was your mood today?</p>
+
+    <div class="mood-container">
+        <span class="mood" onclick="selectMood('😊')">😊</span>
+        <span class="mood" onclick="selectMood('😐')">😐</span>
+        <span class="mood" onclick="selectMood('😢')">😢</span>
+        <span class="mood" onclick="selectMood('😡')">😡</span>
+        <span class="mood" onclick="selectMood('😆')">😆</span>
+    </div>
+
+    <button id="clearLogs">Delete All Logs</button>
+    <p>Timeline Record</p>
+    <div id="moodLogs"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
